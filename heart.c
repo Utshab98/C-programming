@@ -1,3 +1,4 @@
+// create a heart shape with the provided number of stars.
 
 #include <stdio.h>
 
