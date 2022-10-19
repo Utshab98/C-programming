@@ -1,5 +1,6 @@
 //Aditya Mali
 //19-10-2022 
+//Prim's Algorithm using C
 
 #include<stdio.h>
 #include<stdlib.h>
