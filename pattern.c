@@ -1,3 +1,5 @@
+// Create a pattern of triangle with the desired number of lines.
+
 #include <stdio.h>
 int main() {
    int rows, i, j, number = 1;
