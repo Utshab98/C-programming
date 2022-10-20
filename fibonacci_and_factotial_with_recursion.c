@@ -1,8 +1,13 @@
+//PROGRAM TO FIND FIBONACCI AND FACTORIAL WITH RECURSION IN C
+
 #include<stdio.h>
 #include<stdlib.h>
 int fact();
 int fibo();
 int a=0, b=1, s;
+
+//MAIN FUNCTION
+
 void main()
 {
     while (1)
@@ -15,13 +20,20 @@ void main()
     scanf("%d", &opt);
     switch (opt)
     {
-        case 1:
+        case 1:                        //CASE 1 TO FIND THE FACTORIAL OF A NUMBER
         printf("Enter the no.: ");
         scanf("%d", &n);
-        facti=fact(n);
-        printf("%d",facti);
+        if (n<0)
+        {
+            printf("Factorial of %d Not Possible!", n);
+        }
+        else
+        {
+            facti=fact(n);
+            printf("Factorial is %d\n",facti);
+        }
         break;
-        case 2:
+        case 2:                         //CASE 2 TO FIND THE FIBONACCI SERIES
         printf("Enter the no. terms you want: ");
         scanf("%d", &n);
         if (n>0)
@@ -57,7 +69,7 @@ void main()
 }
 
 
-//Factorial 
+//FUNCTION TO FIND FACTORIAL
 
 int fact(int n)
 {
@@ -67,12 +79,12 @@ int fact(int n)
     }
     else
     {
-        return n*fact(n-1);
+        return n*fact(n-1);    //FUNCTION CALLING ITSELF
     }
 }
 
 
-//Fibonacci
+//FUNCTION TO FIND FIBONACCI SERIES
 
 int fibo(int n)
 {
@@ -82,7 +94,7 @@ int fibo(int n)
         printf("%d ", s);
         a=b;
         b=s;
-        return fibo(n-1);
+        return fibo(n-1);      //FUNCTION CALLING ITSELF
     }
     
 }
