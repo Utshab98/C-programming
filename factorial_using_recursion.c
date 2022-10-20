@@ -1,3 +1,6 @@
+//CODE TO FIND THE FACTORIAL OF A NUMBER WITH RECURSIVE APPROACH
+
+
 #include <stdio.h>
 
 //Recursive Function to find the Factorial
